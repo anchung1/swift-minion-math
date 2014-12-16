@@ -15,6 +15,9 @@
 		F008B98A1A3156F1003BDA5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F008B9891A3156F1003BDA5D /* Images.xcassets */; };
 		F008B98D1A3156F1003BDA5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F008B98B1A3156F1003BDA5D /* LaunchScreen.xib */; };
 		F008B9991A3156F1003BDA5D /* balloonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F008B9981A3156F1003BDA5D /* balloonTests.swift */; };
+		F04520DA1A34EB72009D1140 /* game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04520D91A34EB72009D1140 /* game.swift */; };
+		F096E6B51A33EB44000C42BC /* SpriteSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F096E6B41A33EB44000C42BC /* SpriteSheet.swift */; };
+		F0A5926F1A369BEE0060993A /* tada.wav in Resources */ = {isa = PBXBuildFile; fileRef = F0A5926E1A369BEE0060993A /* tada.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		F008B9921A3156F1003BDA5D /* balloonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = balloonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F008B9971A3156F1003BDA5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F008B9981A3156F1003BDA5D /* balloonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = balloonTests.swift; sourceTree = "<group>"; };
+		F04520D91A34EB72009D1140 /* game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = game.swift; sourceTree = "<group>"; };
+		F096E6B41A33EB44000C42BC /* SpriteSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteSheet.swift; sourceTree = "<group>"; };
+		F0A5926E1A369BEE0060993A /* tada.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tada.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 		F008B9701A3156F0003BDA5D = {
 			isa = PBXGroup;
 			children = (
+				F096E6B41A33EB44000C42BC /* SpriteSheet.swift */,
 				F008B97B1A3156F0003BDA5D /* balloon */,
 				F008B9951A3156F1003BDA5D /* balloonTests */,
 				F008B97A1A3156F0003BDA5D /* Products */,
@@ -81,6 +88,7 @@
 		F008B97B1A3156F0003BDA5D /* balloon */ = {
 			isa = PBXGroup;
 			children = (
+				F0A5926E1A369BEE0060993A /* tada.wav */,
 				F008B97E1A3156F0003BDA5D /* AppDelegate.swift */,
 				F008B9801A3156F0003BDA5D /* GameScene.sks */,
 				F008B9821A3156F0003BDA5D /* GameScene.swift */,
@@ -89,6 +97,7 @@
 				F008B9891A3156F1003BDA5D /* Images.xcassets */,
 				F008B98B1A3156F1003BDA5D /* LaunchScreen.xib */,
 				F008B97C1A3156F0003BDA5D /* Supporting Files */,
+				F04520D91A34EB72009D1140 /* game.swift */,
 			);
 			path = balloon;
 			sourceTree = "<group>";
@@ -167,6 +176,7 @@
 				TargetAttributes = {
 					F008B9781A3156F0003BDA5D = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = A33KJ9EK3K;
 					};
 					F008B9911A3156F1003BDA5D = {
 						CreatedOnToolsVersion = 6.1;
@@ -198,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0A5926F1A369BEE0060993A /* tada.wav in Resources */,
 				F008B98D1A3156F1003BDA5D /* LaunchScreen.xib in Resources */,
 				F008B98A1A3156F1003BDA5D /* Images.xcassets in Resources */,
 				F008B9811A3156F0003BDA5D /* GameScene.sks in Resources */,
@@ -219,7 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F096E6B51A33EB44000C42BC /* SpriteSheet.swift in Sources */,
 				F008B9831A3156F0003BDA5D /* GameScene.swift in Sources */,
+				F04520DA1A34EB72009D1140 /* game.swift in Sources */,
 				F008B9851A3156F0003BDA5D /* GameViewController.swift in Sources */,
 				F008B97F1A3156F0003BDA5D /* AppDelegate.swift in Sources */,
 			);
@@ -346,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = balloon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,6 +370,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = balloon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -415,6 +430,7 @@
 				F008B99E1A3156F1003BDA5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F008B99F1A3156F1003BDA5D /* Build configuration list for PBXNativeTarget "balloonTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +439,7 @@
 				F008B9A11A3156F1003BDA5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

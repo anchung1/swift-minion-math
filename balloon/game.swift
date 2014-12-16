@@ -9,31 +9,71 @@
 import Foundation
 
 class Game {
+
+    enum gameMode: UInt32 {
+        case add = 0
+        case sub = 1
+    }
     
     var currentAnswer: UInt32
     var candidates: UInt32
-    var maxValue: UInt32
+    var maxAddValue: UInt32
+    var maxSubValue: UInt32
+    var maxIndValue: UInt32
     
     init() {
         self.currentAnswer = 0
         self.candidates = 5
-        self.maxValue = 10
+        self.maxAddValue = 10
+        self.maxSubValue = 20
+        self.maxIndValue = maxSubValue
     }
     
-    func getRandom() -> (UInt32) {
+    func getRandom(maxValue: UInt32) -> (UInt32) {
         
-        //this returns 0...maxValue-1.  Add one to make it base 1
-        return arc4random_uniform(self.maxValue) + 1
+        //this returns 0...maxAddValue-1.  Add one to make it base 1
+        return arc4random_uniform(maxValue) + 1
     }
     
-    func getQuestion() -> (String) {
-        let first = getRandom()
-        let second = getRandom()
+    func doAddition() -> String {
+        let first = getRandom(maxAddValue)
+        let second = getRandom(maxAddValue)
         
         self.currentAnswer = first + second
         
         return("\(first) + \(second)")
+
+    }
+    
+    func doSubtraction() -> String {
+        let first = getRandom(maxSubValue)
+        let second = getRandom(maxSubValue)
+
+        var output: String
+        if first >= second {
+            
+            self.currentAnswer = first - second
+            output = "\(first) - \(second)"
+            
+        } else {
+            
+            self.currentAnswer = second - first
+            output = "\(second) - \(first)"
+
+        }
         
+        return output
+        
+    }
+    
+    func getQuestion() -> (String) {
+        
+        var mode = arc4random_uniform(2)
+        if mode == gameMode.add.rawValue {
+            return doAddition()
+        }
+        
+        return doSubtraction()
     }
     
     func getAnswer() -> (UInt32) {
@@ -52,7 +92,11 @@ class Game {
                 var num: UInt32 = 0
                 var unique = false
                 while !unique {
-                    num = getRandom() + getRandom()
+                    num = getRandom(maxIndValue)
+                    if num == getAnswer() {
+                        unique = false
+                        continue
+                    }
                     unique = true
                     for val in numList {
                         if val == num {

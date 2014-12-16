@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "balloon/GameScene.swift"
+            timestampString = "439871219.747407"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "GameScene"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "balloon.GameScene.shipTexture.getter : ObjectiveC.SKTexture"
+                  moduleName = "balloon"
+                  urlString = "file:///Users/anchung/Documents/workspace-ios/balloon/balloon/GameScene.swift"
+                  timestampString = "439611573.287757"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "balloon.GameScene.shipTexture.setter : ObjectiveC.SKTexture"
+                  moduleName = "balloon"
+                  urlString = "file:///Users/anchung/Documents/workspace-ios/balloon/balloon/GameScene.swift"
+                  timestampString = "439611573.289359"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "balloon.GameScene.shipTexture.materializeForSet : ObjectiveC.SKTexture"
+                  moduleName = "balloon"
+                  urlString = "file:///Users/anchung/Documents/workspace-ios/balloon/balloon/GameScene.swift"
+                  timestampString = "439611573.289572"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "balloon.GameScene.init (balloon.GameScene.Type)(size : C.CGSize) -&gt; balloon.GameScene"
+                  moduleName = "balloon"
+                  urlString = "file:///Users/anchung/Documents/workspace-ios/balloon/balloon/GameScene.swift"
+                  timestampString = "439611573.289794"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "balloon.GameScene.init (balloon.GameScene.Type)() -&gt; balloon.GameScene"
+                  moduleName = "balloon"
+                  urlString = "file:///Users/anchung/Documents/workspace-ios/balloon/balloon/GameScene.swift"
+                  timestampString = "439611573.289975"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "balloon.GameScene.init (balloon.GameScene.Type)(coder : ObjectiveC.NSCoder) -&gt; Swift.Optional&lt;balloon.GameScene&gt;"
+                  moduleName = "balloon"
+                  urlString = "file:///Users/anchung/Documents/workspace-ios/balloon/balloon/GameScene.swift"
+                  timestampString = "439611573.290172"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpriteSheet.swift"
+            timestampString = "439611663.178192"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "init()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
